@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Object Relational Mapping Using Hibernate of the table CONTACT  -->
+<hibernate-mapping>
+    <class name="lb.ltc.entity.user.Contact" table="CONTACT"><!--Entity corresponding table Contact is in the location   -->
+        <id name="contactNumber" type="string">
+            <column name="PHONE_NUMBER" length="20" not-null="true" />
+            <generator class="assigned" />
+        </id>
+        <property name="email" type="string">
+            <column name="EMAIL" length="50" not-null="true" />
+        </property>
+        <property name="contactName" type="string">
+            <column name="CONTACT_NAME" length="50" not-null="true" />
+            <!--Foreign Key no idea  -->
+        </property>
+    </class>
+</hibernate-mapping>

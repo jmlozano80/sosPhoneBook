@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- Content of the index -->
+	<definition name="index" template="/WEB-INF/jsp/index/index.jsp">
+		<put-attribute name="title" value="SOS Phone-Book" />
+		<put-attribute name="header" value="/WEB-INF/jsp/index/header.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/index/body.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/index/footer.jsp" />
+		<put-attribute name="modalRegistration"
+			value="/WEB-INF/jsp/modal/modalRegistration.jsp" />
+		<put-attribute name="modalRecoverPassword"
+			value="/WEB-INF/jsp/modal/modalRecoverPassword.jsp" />
+
+	</definition>
+
+	<!-- Content of the main -->
+	<definition name="main" template="/WEB-INF/jsp/main/main.jsp">
+		<put-attribute name="title" value="SOS Phone-Book" />
+		<put-attribute name="body" value="/WEB-INF/jsp/main/body.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/main/footer.jsp" />
+		<put-attribute name="table" value="/WEB-INF/jsp/main/table.jsp" />
+		
+		<!-- modals -->
+		<put-attribute name="modalLogout" value="/WEB-INF/jsp/modal/modalLogout.jsp" />
+		<put-attribute name="modalSearchContact" value="/WEB-INF/jsp/modal/modalSearchContact.jsp" />
+		<put-attribute name="modalContactUs" value="/WEB-INF/jsp/modal/modalContactUs.jsp" />
+		<put-attribute name="modalAboutUs" value="/WEB-INF/jsp/modal/modalAboutUs.jsp" />
+		<put-attribute name="modalWebCall" value="/WEB-INF/jsp/modal/modalWebCall.jsp" />
+		<put-attribute name="modalAddContact"
+			value="/WEB-INF/jsp/modal/modalAddContact.jsp"><definition name="modalAddContact" template="/WEB-INF/jsp/modal/modalAddContact.jsp">
+		<put-attribute name="flags" value="/WEB-INF/jsp/main/flags.jsp" />
+		
+	</definition></put-attribute>
+	<put-attribute name="modalCountryCodes"
+			value="/WEB-INF/jsp/modal/modalCountryCodes.jsp"><definition name="modalCountryCodes" template="/WEB-INF/jsp/modal/modalCountryCodes.jsp">
+		<put-attribute name="flags" value="/WEB-INF/jsp/main/flags.jsp" />
+		
+	</definition></put-attribute>
+	
+	<put-attribute name="modalDeleteContact" value="/WEB-INF/jsp/modal/modalDeleteContact.jsp" />
+	</definition>
+
+	 	<!-- end modals -->
+	
+
+</tiles-definitions>

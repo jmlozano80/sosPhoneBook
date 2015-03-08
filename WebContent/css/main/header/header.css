@@ -1,0 +1,18 @@
+h2 {
+	font-family: 'Electrolize';
+	font-style: normal;
+	font-weight: 400;
+	color: rgb(222, 150, 53);
+	src: local('Electrolize'), local('Electrolize-Regular'),
+		url(http://themes.googleusercontent.com/static/fonts/electrolize/v2/DDy9sgU2U7S4xAwH5thnJ4bN6UDyHWBl620a-IRfuBk.woff)
+		format('woff');
+	position: absolute;
+	top: -3%;
+	width: 100%;
+	text-align: center;
+}
+
+body { 
+	border:dotted;
+	
+}
